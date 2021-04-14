@@ -69,6 +69,11 @@
         // Rewind audio to start and play
         audio.currentTime = 0;
         audio.play();
+
+        // Selecting the associated div element with class of "key"
+        const key = document.querySelector(`.key[data-key = '${e.keyCode}']
+        `);
+        key.classList.add('playing'); // adds 'playing' class to key
       });
     </script>
   </body>
