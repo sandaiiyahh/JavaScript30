@@ -1,5 +1,5 @@
 # 🥁 Day 1 - JavaScript Drum Kit 
-Through this first mini project, I had fun brushing up and learning new info on DOM manipulation as we created a cool drum application that played different sounds corresponding to the keys on our keyboard.
+Through this first mini project, I had fun brushing up and learning about DOM manipulation as we created a cool drum application that played different sounds corresponding to the keys on our keyboard.
 
 ![alt text](https://i.ibb.co/qMfXsK8/drumkit.png)
 
