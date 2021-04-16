@@ -1,6 +1,5 @@
 // Selecting all the input element under the .controls class
 const inputs = document.querySelectorAll('.controls input');
-console.log('inputs -->', inputs);
 
 function handleUpdate() {
   // Taking the 'px' from the spacing/blur input OR if it's a color picker input, suffix is an empty string
