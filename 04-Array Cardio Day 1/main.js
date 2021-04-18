@@ -96,6 +96,7 @@ inventors.sort((a, b) => {
   let lastPerson = a.passed - a.year;
   let nextPerson = b.passed - b.year;
   return lastPerson > nextPerson ? -1 : 1;
+  // return nextPerson - lastPerson;
 });
 console.log('Inventors sorted by years lived (longest to shortest):');
 console.table(inventors);
