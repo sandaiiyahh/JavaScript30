@@ -80,14 +80,47 @@ console.table(fullNames);
 
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
+inventors.sort((a, b) => a.year - b.year);
+console.log('Inventors sorted by oldest to youngest birthdate:');
+console.table(inventors); // .sort() mutates the original array
 
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
+const totalYears = inventors.reduce((total, inventor) => {
+  return total + (inventor.passed - inventor.year);
+}, 0);
+console.log('Total years inventors lived altogether -->', totalYears);
 
 // 5. Sort the inventors by years lived
+inventors.sort((a, b) => {
+  let lastPerson = a.passed - a.year;
+  let nextPerson = b.passed - b.year;
+  return nextPerson - lastPerson;
+});
+console.log('Inventors sorted by years lived (longest to shortest):');
+console.table(inventors);
+
+/* -------#6 only works on Wikipedia Page------- */
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+
+// Select div with .mw-cateogry class
+// const category = document.querySelector('.mw-category');
+
+// Find all links within category and add it into an array
+// const links = Array.from(category.querySelectorAll('a'));
+
+// .map() returns a new array of just the links' text content (boulevard names)
+// .filter() filters by only the names that include "de"
+// const de = links
+//   .map((link) => link.textContent)
+//   .filter((streetName) => streetName.includes('de'));
+
+// console.log("List of Boulevards in Paris that contain 'de':");
+// console.table(de);
+
+/* --------------------------------------------------------- */
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
