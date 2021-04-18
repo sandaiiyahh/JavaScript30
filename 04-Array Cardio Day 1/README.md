@@ -72,7 +72,7 @@ people.sort((lastPerson, nextPerson) => {
  inventors.sort((a, b) => {
    let lastPerson = a.passed - a.year;
    let nextPerson = b.passed - b.year;
-   return lastPerson > nextPerson ? -1 : 1;
+   return lastPerson > nextPerson ? -1 : 1; // OR return nextPerson - lastPerson;
  });
  
   ```
