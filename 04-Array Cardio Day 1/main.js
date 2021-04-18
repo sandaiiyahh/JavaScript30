@@ -95,7 +95,7 @@ console.log('Total years inventors lived altogether -->', totalYears);
 inventors.sort((a, b) => {
   let lastPerson = a.passed - a.year;
   let nextPerson = b.passed - b.year;
-  return nextPerson - lastPerson;
+  return lastPerson > nextPerson ? -1 : 1;
 });
 console.log('Inventors sorted by years lived (longest to shortest):');
 console.table(inventors);
@@ -124,6 +124,19 @@ console.table(inventors);
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
+people.sort((personA, personB) => {
+  const [lastA, firstA] = personA.split(', ');
+  const [lastB, firstB] = personB.split(', ');
+  return lastA > lastB ? 1 : -1;
+});
+
+// Could also be solved simply like this:
+// people.sort((lastPerson, nextPerson) => {
+//   return lastPerson > nextPerson ? 1 : -1;
+// });
+
+console.log('People sorted alphabetically by last name:');
+console.table(people);
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
