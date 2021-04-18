@@ -156,3 +156,12 @@ const data = [
   'car',
   'truck',
 ];
+
+const transportation = data.reduce((obj, item) => {
+  if (!obj[item]) obj[item] = 0;
+  obj[item]++;
+  return obj; // always remember to return to continue the loop!
+}, {});
+
+console.log('Sum of instances of each transportation:');
+console.table(transportation);
