@@ -1,4 +1,4 @@
-# 💪 Day 4 - Array Cardio Day 1
+# 🏋️ Day 4 - Array Cardio Day 1
 
 Day 4 consisted of practicing the fundamentals: array methods! I really appreciate this project, because I was able to go back and familiarze myself again with key array concepts. 
 
@@ -76,13 +76,4 @@ people.sort((lastPerson, nextPerson) => {
  });
  
   ```
- 
- 
- 
- 
- 
- 
- 
- 
- 
  
