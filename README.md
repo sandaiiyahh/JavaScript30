@@ -14,3 +14,4 @@ The projects are created with vanilla JS with no use of frameworks, libraries, b
 ### 3. [CSS Variables](https://github.com/sandaiiyahh/JavaScript30/tree/main/03-CSS%20Variables)
 ### 4. [Array Cardio Day 1](https://github.com/sandaiiyahh/JavaScript30/tree/main/04-Array%20Cardio%20Day%201)
 ### 5. [Flex Panel Gallery](https://github.com/sandaiiyahh/JavaScript30/tree/main/05-Flex%20Panel%20Gallery)
+### 6. [Type Ahead](https://github.com/sandaiiyahh/JavaScript30/tree/main/06-Type%20Ahead)
