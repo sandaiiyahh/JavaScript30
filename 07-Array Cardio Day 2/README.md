@@ -18,7 +18,7 @@ const isAdult = people.some((person) => new Date().getFullYear() - person.year >
  
   ```
 ### 2. every
- - Opposite of `.some()`, [`Array.prototype.every()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every) returns 'true' if *all* of the items meet the specified condition.
+ - On the other hand of `.some()`, [`Array.prototype.every()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every) returns 'true' if *all* of the items meet the specified condition.
  
  ```javascript
 const allAdults = people.every((person) => new Date().getFullYear() - person.year >= 19);
