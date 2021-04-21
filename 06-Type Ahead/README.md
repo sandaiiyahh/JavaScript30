@@ -1,4 +1,4 @@
-# ⌨️ Day 4 - Type Ahead
+# ⌨️ Day 6 - Type Ahead
 
 To be honest, this project was a tough one. It packed a lot, from fetch API, to regex, to DOM manipulation. But I've always wanted to know how search bars implement auto suggest features, so this project has been fulfilling to learn!
 
