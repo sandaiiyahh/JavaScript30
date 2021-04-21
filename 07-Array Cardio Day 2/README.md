@@ -34,7 +34,7 @@ const comment = comments.find((comment) => comment.id === 823423);
   ```
 
 ### 4. findIndex
- - `Array.prototype.findIndex()` extends off of `.find()`, but instead, returns the *first* index of the item in the array that meets the specified condition.
+ - `Array.prototype.findIndex()` extends off of `.find()`, but returns the *first index* of the item in the array that meets the specified condition.
  - In our exercise, there was only one value that met the condition, so this is still a nifty method to use when needing to find the index given a value, similiar to `.indexOf()`.
   
  ```javascript
