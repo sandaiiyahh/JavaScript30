@@ -44,7 +44,7 @@ const index = comments.findIndex((comment) => comment.id === 823423);
   
 ### 5. Splice vs Slice & Spread Syntax
  - When deleting an item off an array, [`Array.prototype.splice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) is perfect if you don't mind mutating the original array. 
- - But if you don't want the array to change, you can create a new array that only includes the updated values, leaving out the element you want to remove.
+ - But if you don't want the array to change, you can create a new array that only includes the updated values, leaving out the item you want to remove.
  
  ```javascript
  // Splice method:
