@@ -2,7 +2,7 @@
 
 To be honest, this project was a tough one. It packed a lot, from fetch API, to regex, to DOM manipulation. But I've always wanted to know how search bars implement auto suggest features, so this project has been fulfilling to learn!
 
-![flex-gallery](https://i.ibb.co/cv1Ldzn/typeahead.png)
+![type-ahead-demo](https://i.ibb.co/cv1Ldzn/typeahead.png)
 
 # Demo Link
 View demo [here](https://sandaiiyahh.github.io/JavaScript30/06-Type%20Ahead/index.html)
