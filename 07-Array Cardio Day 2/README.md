@@ -1,6 +1,6 @@
 # 💦 Day 7 - Array Cardio Day 2
 
-Another fundamental Array methods workout! I love the refresher on these not as commonly used, but still just as helpful methods! In this exercise, we practiced .every(), .some(), .find(), as well as new ones for me like .findIndex().
+Another fundamental Array methods workout! I love the refresher on these not as commonly used, but just as helpful methods! In this exercise, we practiced `.every()`, `.some()`, `.find()`, as well as new ones for me like `.findIndex()`.
 
 ![array-cardio-day2-demo](https://i.ibb.co/qgPvHKs/Screen-Shot-2021-04-21-at-4-40-44-PM.png)
 
