@@ -1,4 +1,4 @@
-# 💪 Day 4 - Flex Panel Gallery
+# 💪 Day 5 - Flex Panel Gallery
 
 I really enjoyed this project, as I did with all of the ones so far. But in particular, I love how this one incorporates previous lessons we learned to create a simple dynamic image gallery.
 
