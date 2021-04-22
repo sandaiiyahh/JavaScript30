@@ -41,7 +41,7 @@ View demo [here](https://sandaiiyahh.github.io/JavaScript30/08-Fun%20With%20HTML
   ctx.moveTo(lastX, lastY);
   ctx.lineTo(e.offsetX, e.offsetY);
   ctx.stroke();
-  [lastX, lastY] = [e.offsetX, e.offsetY]; // updates the lastX and lastY points to this new sub-path points
+  [lastX, lastY] = [e.offsetX, e.offsetY]; // updates the lastX and lastY points to these new sub-path points
  }
  
   ```
