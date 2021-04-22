@@ -30,8 +30,8 @@ View demo [here](https://sandaiiyahh.github.io/JavaScript30/08-Fun%20With%20HTML
  
   ```
    - Starting points (x,y coordinates) also need to be determined to know where to start and end a stroke path.
-    - `ctx.beginPath()` starts the path and `ctx.stroke()` actually draws the stroke. 
-    - `ctx.moveTo()` begins a new sub-path at the specified x,y coordinates while `ctx.lineTo()` connects the previous path's coordinates with the specified ones.
+   - `ctx.beginPath()` starts the path and `ctx.stroke()` actually draws the stroke. 
+   - `ctx.moveTo()` begins a new sub-path at the specified x,y coordinates while `ctx.lineTo()` connects the previous path's coordinates with the specified ones.
  ```javascript
  let lastX = 0;
  let lastY = 0;
