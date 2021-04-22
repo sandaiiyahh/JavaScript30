@@ -59,9 +59,9 @@ View demo [here](https://sandaiiyahh.github.io/JavaScript30/08-Fun%20With%20HTML
  }
  
  canvas.addEventListener('mousedown', (e) => {
-  isDrawing = true;
-  [lastX, lastY] = [e.offsetX, e.offsetY];
-}); // updates coordinates to the spot where cursor is pressed down. We can draw.
+   isDrawing = true;
+   [lastX, lastY] = [e.offsetX, e.offsetY];
+ }); // updates coordinates to the spot where cursor is pressed down. We can draw.
   canvas.addEventListener('mousemove', draw); // every time mouse is moving, call draw function
   canvas.addEventListener('mouseup', () => (isDrawing = false));   // do not draw when mouse is up
   canvas.addEventListener('mouseout', () => (isDrawing = false));  // do not draw when mouse is out of canvas area
