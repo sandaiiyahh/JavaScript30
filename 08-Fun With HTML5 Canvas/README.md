@@ -54,7 +54,7 @@ View demo [here](https://sandaiiyahh.github.io/JavaScript30/08-Fun%20With%20HTML
  let isDrawing = false;
  
  function draw(e) {
-  if(!isDrawing) return;  // function only runs if isDrawing is set to true.
+  if(!isDrawing) return;  // function only runs if isDrawing is set to true
    ...
  }
  
