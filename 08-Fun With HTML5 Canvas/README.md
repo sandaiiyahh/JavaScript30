@@ -46,8 +46,8 @@ View demo [here](https://sandaiiyahh.github.io/JavaScript30/08-Fun%20With%20HTML
  
   ```
   
-### 2. Flags & Mouse Listeners
- - According to Wes Bos, a common method that appears in coding is the use of boolean flags. Boolean flags are convenient ways to toggle on and off a certain event.
+### 2. Boolean Flags & Mouse Listeners
+ - According to Wes Bos, a common method that appears in coding is the use of boolean flags. Boolean flags are convenient ways to toggle a function depending on the event.
  - In our case, we needed to determine when a user starts and stops drawing so we used the boolean, `isDrawing`, to help us. 
  
   ```javascript
