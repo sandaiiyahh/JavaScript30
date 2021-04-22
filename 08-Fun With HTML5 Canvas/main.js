@@ -48,13 +48,11 @@ function draw(e) {
   direction ? ctx.lineWidth++ : ctx.lineWidth--;
 }
 
-// Add event listener every time mouse is moved and call draw
-canvas.addEventListener('mousemove', draw);
-
 // As soon as mouse is down, but before mouse moves, update X and Y points
 canvas.addEventListener('mousedown', (e) => {
   isDrawing = true;
   [lastX, lastY] = [e.offsetX, e.offsetY];
 });
+canvas.addEventListener('mousemove', draw); // every time mouse is moved, call draw function
 canvas.addEventListener('mouseup', () => (isDrawing = false));
 canvas.addEventListener('mouseout', () => (isDrawing = false));
