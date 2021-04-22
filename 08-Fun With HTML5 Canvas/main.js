@@ -22,24 +22,14 @@ function draw(e) {
   if (!isDrawing) return; // stop function from running when mouse is not down
 
   ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+  ctx.beginPath(); // start a path
+  ctx.moveTo(lastX, lastY); // move to specified points
+  ctx.lineTo(e.offsetX, e.offsetY); // connect previous points to new points
+  ctx.stroke(); // draw the stroke
 
-  // Start a path
-  ctx.beginPath();
+  [lastX, lastY] = [e.offsetX, e.offsetY]; // updates lastX & lastY points:
 
-  // Start from:
-  ctx.moveTo(lastX, lastY);
-
-  // Go to:
-  ctx.lineTo(e.offsetX, e.offsetY); // e.offsetX and e.offsetY are coming from event
-
-  // Starts drawing:
-  ctx.stroke();
-
-  // Updates lastX & lastY points:
-  [lastX, lastY] = [e.offsetX, e.offsetY];
-
-  // Increments so the next time we draw, hue updates to a different color
-  hue++;
+  hue++; // hue updates to a different color everytime draw is run
   if (hue >= 360) hue = 0; // so we don't go over max 360 (although it's fine)
 
   if (ctx.lineWidth >= 50 || ctx.lineWidth <= 1) direction = !direction; // flips direction
