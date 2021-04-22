@@ -16,3 +16,4 @@ The projects are created with vanilla JS with no use of frameworks, libraries, b
 ### 5. [Flex Panel Gallery](https://github.com/sandaiiyahh/JavaScript30/tree/main/05-Flex%20Panel%20Gallery)
 ### 6. [Type Ahead](https://github.com/sandaiiyahh/JavaScript30/tree/main/06-Type%20Ahead)
 ### 7. [Array Cardio Day 2](https://github.com/sandaiiyahh/JavaScript30/tree/main/07-Array%20Cardio%20Day%202)
+### 8. [Fun with HTML5 Canvas](https://github.com/sandaiiyahh/JavaScript30/tree/main/08-Fun%20With%20HTML5%20Canvas)
