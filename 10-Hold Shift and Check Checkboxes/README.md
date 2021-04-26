@@ -43,6 +43,22 @@ View demo [here](https://sandaiiyahh.github.io/JavaScript30/10-Hold%20Shift%20an
   - We need `lastChecked` because without it, `this` will always be the one we just clicked, and not the starting checkbox. As a result, `lastChecked` needs to be reassigned to `this` to store that previous checkbox value.
  
  
+### 4. inBetween Boolean Flag
+ - Boolean flags make a helpful appearance again! At first, while using a for loop sounded viable conceptually, boolean flags made our looping easier to deal with in my opinion, since we were working with Node Lists and elements. 
+ - For our case, we used the boolean `inBetween` to note when to check off a box. From the range between `lastChecked` and `this`, we toggled `inBetween`. So that when the second time `inBetween` gets fired, our computer knows to stop checking off boxes. 
+
+ ```javascript
+ let inBetween = false;
  
+ checkboxes.forEach((checkbox) => {
+  if (checkbox === this || checkbox === lastChecked) {
+   inBetween = !inBetween;
+  }
+  if (inBetween) {  
+    checkbox.checked = true;
+  }
+ });
+ 
+ ```
  
  
