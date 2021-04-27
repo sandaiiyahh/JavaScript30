@@ -18,3 +18,4 @@ The projects are created with vanilla JS with no use of frameworks, libraries, b
 ### 7. [Array Cardio Day 2](https://github.com/sandaiiyahh/JavaScript30/tree/main/07-Array%20Cardio%20Day%202)
 ### 8. [Fun with HTML5 Canvas](https://github.com/sandaiiyahh/JavaScript30/tree/main/08-Fun%20With%20HTML5%20Canvas)
 ### 9. [Dev Tools Domination](https://github.com/sandaiiyahh/JavaScript30/tree/main/09-Dev%20Tools%20Domination)
+### 10. [Hold Shift And Check Checkboxes](https://github.com/sandaiiyahh/JavaScript30/tree/main/10-Hold%20Shift%20and%20Check%20Checkboxes)
