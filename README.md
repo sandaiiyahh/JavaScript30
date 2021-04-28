@@ -20,3 +20,4 @@ The projects are created with vanilla JS with no use of frameworks, libraries, b
 ### 9. [Dev Tools Domination](https://github.com/sandaiiyahh/JavaScript30/tree/main/09-Dev%20Tools%20Domination)
 ### 10. [Hold Shift And Check Checkboxes](https://github.com/sandaiiyahh/JavaScript30/tree/main/10-Hold%20Shift%20and%20Check%20Checkboxes)
 ### 11. [Custom Video Player](https://github.com/sandaiiyahh/JavaScript30/tree/main/11-Custom%20Video%20Player)
+### 12. [Key Sequence Detection](https://github.com/sandaiiyahh/JavaScript30/tree/main/12-Key%20Sequence%20Detection)
