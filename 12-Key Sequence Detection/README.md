@@ -11,7 +11,7 @@ View demo [here](https://sandaiiyahh.github.io/JavaScript30/12-Key%20Sequence%20
 
 ### 1. event.key
  - When listening for a window `keyup` event, you can see what key the user pressed on with `event.key`. 
- - In our case, we were able to track of every key the user pressed into an array.
+ - In our case, we were able to keep track of every key the user pressed by placing them in an array.
  
  ```javascript
  window.addEventListener('keyup', (e) => {
