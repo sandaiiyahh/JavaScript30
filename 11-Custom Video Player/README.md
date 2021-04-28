@@ -65,7 +65,7 @@ function skip() {
 - In addition, HTMlMediaElement also has a [`timeupdate`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/timeupdate_event) event. In firing only when the current time of the video gets updated, we were able to know when to change our progress bar.
 
 
-### 5. offsetWidth
+### 5. offsetX & offsetWidth
  - If you ever wanted to update the video's time when you drag and click on a video, you can use an event's `offsetX` and the progress bar's `offsetWidth`. `offsetX` displays how far the cursor is along the x axis, relative to the progress bar element. `offsetWidth` is the full width of the element.
 
 ```javascript
