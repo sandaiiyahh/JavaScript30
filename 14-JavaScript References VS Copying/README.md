@@ -84,7 +84,7 @@ const cap3 = { ...person2, state: 'NY' }; // {name: 'Brandon', age: 12, state: '
  ```
  
  ### 4. Array and Object Copy Methods only make *shallow* copies
-  - The methods I just listed above only work for properties that are 1 level deep. So if we were working with a nested object and we were trying to change a nested property, the original array will still be affected.
+  - The methods I just listed above only work for properties that are 1 level deep. So if we were working with a nested object and we were trying to change a nested property, the original object will still be affected.
   - A cheap way, according to Wes Bos, to go about this is using JSON serialization and parsing. It returns a string, and parses it to turn it back to an object, which removes any references. While this method works, it can lead to performance issues.
   
  ```javascript
