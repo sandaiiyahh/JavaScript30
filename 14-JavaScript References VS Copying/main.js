@@ -76,7 +76,7 @@ console.log('players:', players2);
 
 // Array.from Method:
 console.log('%cSolution #4:', 'font-weight: bold', 'Array.from method:');
-const team5 = [...players2];
+const team5 = Array.from(players2);
 team5[3] = 'Mike';
 console.warn('team5 member changed to Mike');
 console.log('team5 (copy of players):', team5);
