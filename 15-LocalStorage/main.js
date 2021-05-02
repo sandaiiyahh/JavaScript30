@@ -81,7 +81,6 @@ function checkUncheckAll() {
     checkBtn.textContent = 'Check All';
   }
   isChecked = !isChecked;
-  console.log('is it checked?', isChecked);
 }
 
 // Event Listeners:
