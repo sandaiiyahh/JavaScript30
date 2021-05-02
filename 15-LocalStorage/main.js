@@ -2,7 +2,9 @@
 const addItems = document.querySelector('.add-items'); // the form
 const itemsList = document.querySelector('.plates');
 // Items is either the local storage array of item objects OR an empty array
-const items = JSON.parse(localStorage.getItem('items')) || [];
+let items = JSON.parse(localStorage.getItem('items')) || [];
+const deleteBtn = document.querySelector('.delete');
+const checkBtn = document.querySelector('.check-uncheck');
 
 // Function that adds input to items array
 function addItem(e) {
@@ -36,7 +38,6 @@ function populateList(plates = [], platesList) {
     `;
     })
     .join(''); // returns array into one big string (needed for HTML)
-  console.log(platesList);
 }
 
 // Function that can persist any checks of items
@@ -50,11 +51,44 @@ function toggleDone(e) {
   // Reupdate list on localStorage
   // Visually update the list on our page
   localStorage.setItem('items', JSON.stringify(items));
+  populateList(items, itemsList);
+}
+
+// Function that deletes items from itemsList
+function deleteAll() {
+  if (window.confirm('Are you sure you would like to delete all tapas?')) {
+    itemsList.innerHTML = ``; // clears display
+    items = [];
+    localStorage.removeItem('items');
+  }
+}
+
+// Function that checks all items or unchecks all items
+let isChecked = false;
+function checkUncheckAll() {
+  if (!isChecked) {
+    items.map((item) => {
+      console.log(item);
+      return (item.done = true);
+    });
+    populateList(items, itemsList);
+    checkBtn.textContent = 'Uncheck All';
+  } else {
+    items.map((item) => {
+      return (item.done = false);
+    });
+    populateList(items, itemsList);
+    checkBtn.textContent = 'Check All';
+  }
+  isChecked = !isChecked;
+  console.log('is it checked?', isChecked);
 }
 
 // Event Listeners:
 addItems.addEventListener('submit', addItem); // submit better than click for forms
 itemsList.addEventListener('click', toggleDone); // listen for click on the PARENT class, plates
+deleteBtn.addEventListener('click', deleteAll);
+checkBtn.addEventListener('click', checkUncheckAll);
 
 // For local storage purpose: displays previously stored items onto list
 populateList(items, itemsList);

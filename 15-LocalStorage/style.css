@@ -79,3 +79,27 @@ h2 {
   outline: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+#add {
+  cursor: pointer;
+}
+
+.buttons {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.delete,
+.check-uncheck {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.check-uncheck {
+  background: rgba(127, 181, 102, 0.95);
+}
+
+.delete {
+  background: rgba(210, 106, 106, 0.95);
+}
