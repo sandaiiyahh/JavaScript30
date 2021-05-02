@@ -8,7 +8,7 @@ const checkBtn = document.querySelector('.check-uncheck');
 
 // Function that adds input to items array
 function addItem(e) {
-  e.preventDefault(); // prevents form from refreshing
+  e.preventDefault(); // prevents page from refreshing
   // Get the input element of what user typed's VALUE:
   const text = this.querySelector('[name=item]').value;
   const item = {
