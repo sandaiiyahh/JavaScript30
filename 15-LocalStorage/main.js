@@ -1,81 +1,60 @@
-html {
-    box-sizing: border-box;
-    background: url("oh-la-la.jpeg") center no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  
-  svg {
-    fill: white;
-    background: rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 50%;
-    width: 200px;
-    margin-bottom: 50px;
-  }
-  
-  .wrapper {
-    padding: 20px;
-    max-width: 350px;
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    text-align: center;
-    margin: 0;
-    font-weight: 200;
-  }
-  
-  .plates {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    list-style: none;
-  }
-  
-  .plates li {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 10px 0;
-    font-weight: 100;
-    display: flex;
-  }
-  
-  .plates label {
-    flex: 1;
-    cursor: pointer;
-  }
-  
-  .plates input {
-    display: none;
-  }
-  
-  .plates input + label:before {
-    content: "⬜️";
-    margin-right: 10px;
-  }
-  
-  .plates input:checked + label:before {
-    content: "🌮";
-  }
-  
-  .add-items {
-    margin-top: 20px;
-  }
-  
-  .add-items input {
-    padding: 10px;
-    outline: 0;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-  }
+// Grab Form and Plates display list
+const addItems = document.querySelector('.add-items'); // the form
+const itemsList = document.querySelector('.plates');
+// Items is either the local storage array of item objects OR an empty array
+const items = JSON.parse(localStorage.getItem('items')) || [];
+
+// Function that adds input to items array
+function addItem(e) {
+  e.preventDefault(); // prevents form from refreshing
+  // Get the input element of what user typed's VALUE:
+  const text = this.querySelector('[name=item]').value;
+  const item = {
+    text,
+    done: false,
+  };
+  // Push item object to items array
+  items.push(item);
+  populateList(items, itemsList);
+  // Add items array to local storage! (make sure to stringify because it doesnt accept objects)
+  localStorage.setItem('items', JSON.stringify(items));
+  this.reset(); // resets form element (built in method)
+}
+
+// Function that displays input onto list
+function populateList(plates = [], platesList) {
+  // Map over items array and add each list item onto itemsList
+  platesList.innerHTML = plates
+    .map((plate, idx) => {
+      return `
+      <li>
+        <input type="checkbox" data-index=${idx} id="item${idx}" ${
+        plate.done ? 'checked' : ''
+      }/>
+        <label for="item${idx}">${plate.text}</label>
+      </li>
+    `;
+    })
+    .join(''); // returns array into one big string (needed for HTML)
+  console.log(platesList);
+}
+
+// Function that can persist any checks of items
+function toggleDone(e) {
+  // If user did NOT click on the checkbox input, return
+  if (!e.target.matches('input')) return;
+  // Get index of item checkbox that was checked (thanks to our data-index attribute)
+  const index = e.target.dataset.index;
+  // Set the done property of item object to its OPPOSITE
+  items[index].done = !items[index].done;
+  // Reupdate list on localStorage
+  // Visually update the list on our page
+  localStorage.setItem('items', JSON.stringify(items));
+}
+
+// Event Listeners:
+addItems.addEventListener('submit', addItem); // submit better than click for forms
+itemsList.addEventListener('click', toggleDone); // listen for click on the PARENT class, plates
+
+// For local storage purpose: displays previously stored items onto list
+populateList(items, itemsList);
