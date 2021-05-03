@@ -23,4 +23,5 @@ The projects are created with vanilla JS with no use of frameworks, libraries, b
 ### 12. [Key Sequence Detection](https://github.com/sandaiiyahh/JavaScript30/tree/main/12-Key%20Sequence%20Detection)
 ### 13. [Slide In On Scroll](https://github.com/sandaiiyahh/JavaScript30/tree/main/13-Slide%20In%20On%20Scroll)
 ### 14. [JavaScript References VS Copying](https://github.com/sandaiiyahh/JavaScript30/tree/main/14-JavaScript%20References%20VS%20Copying)
-### 15. [Mouse Move Shadow](https://github.com/sandaiiyahh/JavaScript30/tree/main/16-Mouse%20Move%20Shadow)
+### 15. [LocalStorage](https://github.com/sandaiiyahh/JavaScript30/tree/main/15-LocalStorage)
+### 16. [Mouse Move Shadow](https://github.com/sandaiiyahh/JavaScript30/tree/main/16-Mouse%20Move%20Shadow)
