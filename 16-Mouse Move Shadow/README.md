@@ -1,6 +1,6 @@
 # 🖱️ Day 16 - Mouse Move Shadow
 
-Another cool offsetX/offsetY project for us to better understand mouse coordinates on a page. In this project, we were able to move a text's shadow according to where our mouse was on the page.
+Another cool `offsetX` / `offsetY` project for us to better understand mouse coordinates on a page. In this project, we were able to move a text's shadow according to where our mouse was on the page.
 
 ![mouse-move-demo](https://i.ibb.co/RvpHnns/Screen-Shot-2021-05-03-at-5-34-26-PM.png)
 
