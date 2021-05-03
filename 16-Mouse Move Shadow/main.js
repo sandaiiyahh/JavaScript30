@@ -15,7 +15,6 @@ function shadow(e) {
   // Determining walk coordinates
   const xWalk = Math.round((x / width) * walk - walk / 2); // 15 is as high as we go. -15 is as low as we should go
   const yWalk = Math.round((y / height) * walk - walk / 2);
-  console.log(xWalk * -1);
 
   // Add text-shadow according to xWalk / yWalk
   text.style.textShadow = `
