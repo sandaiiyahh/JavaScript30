@@ -9,7 +9,7 @@ View demo [here](https://sandaiiyahh.github.io/JavaScript30/18-Adding%20Up%20Tim
 
 ## What I Learned
 
-### 1. Destructuring with split
+### 1. Destructuring with `split`
  - If you have data structured in "mm:ss" format, you can conveniently strip minutes and seconds by using `split()` and destructuring. 
   <img src="https://i.ibb.co/mbFNgtJ/Screen-Shot-2021-05-05-at-6-12-28-PM.png" width="1500" />
   
