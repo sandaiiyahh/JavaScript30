@@ -20,7 +20,7 @@ View demo [here](https://sandaiiyahh.github.io/JavaScript30/18-Adding%20Up%20Tim
    .map(timeCode => {
    const [mins, secs] = timeCode.split(':');
  ```
- - Here, we are splitting the data `["5:43"]` by `:` and declaring the left side to be called `mins` with the right side to be `secs`. 
+ - Here, we are dividing up the data `["5:43"]` by `:` and declaring the left side to be called `mins` with the right side to be `secs`. 
 
 ### 2. parseFloat as a function argument
  - One thing to note is that each of the times inside the array is in string format. As a result, we would have to convert each of the minutes and seconds into numbers.
