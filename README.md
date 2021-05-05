@@ -25,3 +25,4 @@ The projects are created with vanilla JS with no use of frameworks, libraries, b
 ### 14. [JavaScript References VS Copying](https://github.com/sandaiiyahh/JavaScript30/tree/main/14-JavaScript%20References%20VS%20Copying)
 ### 15. [LocalStorage](https://github.com/sandaiiyahh/JavaScript30/tree/main/15-LocalStorage)
 ### 16. [Mouse Move Shadow](https://github.com/sandaiiyahh/JavaScript30/tree/main/16-Mouse%20Move%20Shadow)
+### 17. [Sort Without Articles](https://github.com/sandaiiyahh/JavaScript30/tree/main/17-Sort%20Without%20Articles)
