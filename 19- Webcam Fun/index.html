@@ -4,27 +4,36 @@
     <meta charset="UTF-8" />
     <title>Get User Media Code Along!</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap&text=PhotoBooth"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="photobooth">
+      <h1>PhotoBooth</h1>
       <div class="controls">
-        <button onClick="takePhoto()">Take Photo</button>
-        <!--       <div class="rgb">
-        <label for="rmin">Red Min:</label>
-        <input type="range" min=0 max=255 name="rmin">
-        <label for="rmax">Red Max:</label>
-        <input type="range" min=0 max=255 name="rmax">
-        <br>
-        <label for="gmin">Green Min:</label>
-        <input type="range" min=0 max=255 name="gmin">
-        <label for="gmax">Green Max:</label>
-        <input type="range" min=0 max=255 name="gmax">
-        <br>
-        <label for="bmin">Blue Min:</label>
-        <input type="range" min=0 max=255 name="bmin">
-        <label for="bmax">Blue Max:</label>
-        <input type="range" min=0 max=255 name="bmax">
-      </div> -->
+        <button class="click" onClick="takePhoto()">Take Photo</button>
+        <button class="normal">Normal</button>
+        <button class="red">Red Effect</button>
+        <button class="split">Horror Effect</button>
+        <button class="green">Green Screen Effect</button>
+        <div class="rgb">
+          <label for="rmin">Red Min:</label>
+          <input type="range" min="0" max="255" name="rmin" />
+          <label for="rmax">Red Max:</label>
+          <input type="range" min="0" max="255" name="rmax" />
+          <br />
+          <label for="gmin">Green Min:</label>
+          <input type="range" min="0" max="255" name="gmin" />
+          <label for="gmax">Green Max:</label>
+          <input type="range" min="0" max="255" name="gmax" />
+          <br />
+          <label for="bmin">Blue Min:</label>
+          <input type="range" min="0" max="255" name="bmin" />
+          <label for="bmax">Blue Max:</label>
+          <input type="range" min="0" max="255" name="bmax" />
+        </div>
       </div>
 
       <canvas class="photo"></canvas>
