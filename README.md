@@ -28,3 +28,5 @@ The projects are created with vanilla JS with no use of frameworks, libraries, b
 ### 17. [Sort Without Articles](https://github.com/sandaiiyahh/JavaScript30/tree/main/17-Sort%20Without%20Articles)
 ### 18. [Adding Up Times With Reduce](https://github.com/sandaiiyahh/JavaScript30/tree/main/18-Adding%20Up%20Times%20With%20Reduce)
 ### 19. [Webcam Fun](https://github.com/sandaiiyahh/JavaScript30/tree/main/19-Webcam%20Fun)
+### 20. [Speech Detection](https://github.com/sandaiiyahh/JavaScript30/tree/main/20-Speech%20Detection)
+
