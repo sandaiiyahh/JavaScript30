@@ -63,7 +63,7 @@ let pixels = ctx.getImageData(0, 0, width, height);
 
  ```
  
- ### 4. Take a snapshot with Canvas
+ ### 5. Take a snapshot with Canvas
  - For us to achieve that snapshot effect of capturing a frame, the canvas element has a cool method called [`toDataURL`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL) that creates a text-representation of an image. 
  - Using this data, we can set it to a link's URL. When you click on the link, you can actually download the image.
  
@@ -80,13 +80,13 @@ function takePhoto() {
 }
  ``` 
  
-### 5. `createElement`
+### 6. `createElement`
   - [`createElement`](https://www.w3schools.com/jsref/met_document_createelement.asp) easily creates a whole element. In our case, we wanted to create a link that allows us to display and download an image.
 
-### 6. `setAttribute`  
+### 7. `setAttribute`  
   - Instead of navigating to a file, when you set a link's attribute to "download", clicking on the link triggers a download instead. 
 
-### 7. `insertBefore`
+### 8. `insertBefore`
  - A helpful method to display the latest items first is using `insertBefore`. 
  - In our project, we wanted the most recent snapshots to appear in front. By using `insertBefore` each time we take a photo, we place the link/photo right before the div element's first child. 
  
