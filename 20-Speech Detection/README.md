@@ -1,4 +1,4 @@
-# 💬 Day 19 - Speech Detection
+# 💬 Day 20 - Speech Detection
 
 I can see the potential, endless posibilities with today's project. For such a simple and short project, I was fascinated by the ability to use speech recognition and have your words appear on the DOM.
 
