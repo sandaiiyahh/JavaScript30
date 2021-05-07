@@ -9,6 +9,16 @@ body {
   font-size: 20px;
 }
 
+h2 {
+  font-size: 50px;
+}
+
+h2,
+h5 {
+  margin-top: 50px;
+  text-align: center;
+}
+
 .words {
   max-width: 500px;
   margin: 50px auto;
