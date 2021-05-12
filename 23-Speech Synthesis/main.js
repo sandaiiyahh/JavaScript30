@@ -30,6 +30,20 @@ function populateVoices() {
 function setVoice() {
   // Find the voice object whose object name matches the value of the option
   msg.voice = voices.find((voice) => voice.name === this.value);
+  // Run function that restarts the voice
+  toggle();
+}
+
+// Function that restarts voice every time option value changes
+function toggle() {
+  speechSynthesis.cancel();
+  speechSynthesis.speak(msg);
+}
+
+function setOption() {
+  // console.log(this.name, this.value) // lets us see the name of input changed and the value
+  msg[this.name] = this.value;
+  toggle(); // start everything over again with this new change
 }
 
 // Listen for when voices load
@@ -37,3 +51,6 @@ speechSynthesis.addEventListener('voiceschanged', populateVoices);
 
 // Listen for a different selection in dropdown
 voicesDropdown.addEventListener('change', setVoice);
+
+// Listen for change in each of our options (rate, pitch, textarea)
+options.forEach((option) => option.addEventListener('change', setOption));
