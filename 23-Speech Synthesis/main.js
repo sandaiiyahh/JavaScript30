@@ -19,6 +19,7 @@ function populateVoices() {
 
   // Set each voice as an option in our dropdown
   voicesDropdown.innerHTML = voices
+    // .filter((voice) => voice.lang.includes('en'))
     .map(
       (voice) =>
         `<option value="${voice.name}">${voice.name} (${voice.lang})</option>"`
@@ -35,15 +36,17 @@ function setVoice() {
 }
 
 // Function that restarts voice every time option value changes
-function toggle() {
+function toggle(startOver = true) {
   speechSynthesis.cancel();
-  speechSynthesis.speak(msg);
+  if (startOver) {
+    speechSynthesis.speak(msg);
+  }
 }
 
 function setOption() {
   // console.log(this.name, this.value) // lets us see the name of input changed and the value
   msg[this.name] = this.value;
-  toggle(); // start everything over again with this new change
+  toggle(); // starts speech over again with this new change
 }
 
 // Listen for when voices load
@@ -54,3 +57,7 @@ voicesDropdown.addEventListener('change', setVoice);
 
 // Listen for change in each of our options (rate, pitch, textarea)
 options.forEach((option) => option.addEventListener('change', setOption));
+
+// Listen for click of buttons
+speakButton.addEventListener('click', toggle);
+stopButton.addEventListener('click', () => toggle(false));
