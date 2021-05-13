@@ -11,7 +11,7 @@ View demo [here](https://sandaiiyahh.github.io/JavaScript30/24-Sticky%20Nav/inde
 
 ### 1. Fixed Positions
  - One important thing to keep in mind when adding `position: fixed` to an element is that if you were to remove it from the DOM, it leaves the space it once took. This causes a snap effect where all the other elements on the bottom *shift* up.
- - In our project, we wanted to have a fixed navbar only once we reached that navbar position. A possible way to stop the judder effect is to offset it with adding `padding` that is the same pixel height as the navbar.
+ - In our project, everything above our navbar pulled up unnaturally once we scrolled down and reached our navbar. A possible way to stop the judder effect is to offset it with adding `padding` that is the same pixel height as the navbar.
  
   ```javascript
   if (window.scrollY >= topOfNav) {
