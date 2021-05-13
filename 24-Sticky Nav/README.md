@@ -24,7 +24,7 @@ View demo [here](https://sandaiiyahh.github.io/JavaScript30/24-Sticky%20Nav/inde
  
  ### 2. Adding A Class to the Body
   - The benefits of adding a class to a body is that you can target multiple children, especially when you want to add effects/changes to them. 
-  - When we reached the position of the top of our navbar, we wanted to bring in a logo and make our paragraph body `div` more zoomed in *in addition* to just making the navbar fixed. Having one class in our body to do it all was extremely handy.
+  - When we reached the position of the top of our navbar, we wanted to bring in a logo and make our `div` more zoomed in *in addition* to just making the navbar fixed. Having one class in our body to do it all was extremely handy.
   
  ```javascript
   document.body.classList.add('fixed-nav');
