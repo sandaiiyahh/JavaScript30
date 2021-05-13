@@ -32,6 +32,6 @@ The projects are created with vanilla JS with no use of frameworks, libraries, b
 ### 21. [Geolocation](https://github.com/sandaiiyahh/JavaScript30/tree/main/21-Geolocation)
 ### 22. [Follow Along Link Highlighter](https://github.com/sandaiiyahh/JavaScript30/tree/main/22-Follow%20Along%20Link%20Highlighter)
 ### 23. [Speech Synthesis](https://github.com/sandaiiyahh/JavaScript30/tree/main/23-Speech%20Synthesis)
-
+### 24. [Sticky Nav](https://github.com/sandaiiyahh/JavaScript30/tree/main/24-Sticky%20Nav)
 
 
