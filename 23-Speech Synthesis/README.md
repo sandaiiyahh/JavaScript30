@@ -1,4 +1,4 @@
-# 💬 Day 22 - Speech Synthesis
+# 💬 Day 23 - Speech Synthesis
 
 Adding this one to my project favorites again! I am finding myself loving the ones involving speech. Today's project involves text-to-speech this time, with options to be able to change the pitch, rate, and voice of the speaker.
 
