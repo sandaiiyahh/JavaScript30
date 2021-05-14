@@ -1,6 +1,6 @@
 # 💭 Day 25 - Event Capture, Propagation, Bubbling and Once
 
-Today was super insightful! Our mini project involved learning about the different options available and characteristics regarding event listeners. 
+Today was super insightful! Our mini project involved learning about the different characteristics surrounding event listeners. 
 
 ![event-capture-demo](https://i.ibb.co/P1k01R8/Screen-Shot-2021-05-14-at-5-59-34-PM.png)
 
