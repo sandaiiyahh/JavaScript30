@@ -16,7 +16,7 @@ divs.forEach((div) =>
 button.addEventListener(
   'click',
   () => {
-    console.log('Clicked! Just once though right?');
+    console.log('You clicked, but this will just log once!');
   },
   { once: true }
 );
