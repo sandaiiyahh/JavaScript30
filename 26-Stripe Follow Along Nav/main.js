@@ -12,7 +12,13 @@ function handleEnter() {
   // Add 'trigger-enter' class to li
   this.classList.add('trigger-enter');
   // Add 'trigger-enter-active' class after 150 ms
-  setTimeout(() => this.classList.add('trigger-enter-active'), 150); // arrow function -> 'this' is inherited from parent
+  // Edge case for when you hover around fast: Only show the content AFTER it has the 'trigger-enter' class on it
+  setTimeout(
+    () =>
+      this.classList.contains('trigger-enter') &&
+      this.classList.add('trigger-enter-active'),
+    150
+  ); // arrow function -> 'this' is inherited from parent
   // Add 'open' class to white dropdown background div
   background.classList.add('open');
 
