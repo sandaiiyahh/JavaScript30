@@ -1,6 +1,6 @@
 # 🚧 Day 26 - Stripe Follow Along Nav
 
-It is fascinating how Wes Bos wanted to know how to create Stripe's navbar feature, and was able to implement it on his own. That is the determination and skills I strive for. Today, we learned how to create a cool navigation involving a shared background among the dropdowns.
+It is fascinating how Wes Bos wanted to know how to create Stripe's navbar feature, and was able to implement it on his own. That is the determination and skills I strive for. Today, we learned how to create a cool navigation effect involving a shared background among the dropdowns.
 
 ![stripe-follow-along-demo](https://i.ibb.co/NWXXCY0/Screen-Shot-2021-05-17-at-4-14-34-PM.png)
 
@@ -73,8 +73,8 @@ function handleEnter() {
  ```
  
  ### 4. Get Coordinates In Relation To Element
-  - Similar to [Day 22](https://github.com/sandaiiyahh/JavaScript30/tree/main/22-Follow%20Along%20Link%20Highlighter)'s project, we are using `getBoundingClientRect` to determine the sizing of our highlight, or in this case, our `background`, for our each of our dropdown. However, our `background` is inside a `nav`. 
-  - As a result, this will affect how we figure out the coordinates for `background`. Because our coordinates will be positioned based on the positon of `nav`, we can get the coordinates of `nav` and subtract them from `background`'s coordinates.
+  - Similar to [Day 22](https://github.com/sandaiiyahh/JavaScript30/tree/main/22-Follow%20Along%20Link%20Highlighter)'s project, we are using `getBoundingClientRect` to determine the sizing of our `highlight`, or in this case, our `background`, for our each of our `dropdown`. However, our `background` is inside a `nav`. 
+  - As a result, this will affect how we figure out the coordinates for `dropdown`. Because our coordinates will be positioned based on the positon of `nav`, we can get the coordinates of `nav` and subtract them from `dropdown`'s coordinates.
   
  ```javascript
 const background = document.querySelector('.dropdownBackground');
@@ -93,7 +93,7 @@ background.style.setProperty('width', `${coords.width}px`); // apply coords to b
 
 ```
 
-- This way, when we add a new element to the file, the `top` and `left` coordinates will adjust accordingly as the `nav ` gets bumped up or down. 
+- This way, when we add a new element to the file, the `top` and `left` coordinates will adjust accordingly as the `nav` gets bumped up or down. 
    
    
   
