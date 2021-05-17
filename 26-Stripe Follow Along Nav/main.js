@@ -28,11 +28,17 @@ function handleEnter() {
   const coords = {
     height: dropdownCoords.height,
     width: dropdownCoords.width,
+    top: dropdownCoords.top - navCoords.top, // offset with the nav's top (move it up by the same amount of pixels)
+    left: dropdownCoords.left - navCoords.left,
   };
 
   // Now that we have width & height, we can set the white dropdown bg to it
   background.style.setProperty('width', `${coords.width}px`);
   background.style.setProperty('height', `${coords.height}px`);
+  background.style.setProperty(
+    'transform',
+    `translate(${coords.left}px, ${coords.top}px)`
+  );
 }
 
 // Remove classes once you hover away from li
