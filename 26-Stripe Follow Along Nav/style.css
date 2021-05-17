@@ -9,6 +9,11 @@ html {
   box-sizing: inherit;
 }
 
+h2 {
+  color: #fff;
+  text-align: center;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -158,9 +163,9 @@ a.button {
 .button[href*='twitter'] {
   background: #019fe9;
 }
-.button[href*='facebook'] {
-  background: #3b5998;
+.button[href*='portfolio'] {
+  background: #020c1b;
 }
-.button[href*='courses'] {
-  background: #ffc600;
+.button[href*='linkedin'] {
+  background: #0e76a8;
 }
