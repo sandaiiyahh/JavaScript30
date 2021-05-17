@@ -7,7 +7,7 @@ const background = document.querySelector('.dropdownBackground');
 // Grab the nav
 const nav = document.querySelector('.top');
 
-// Add class to show dropdown content
+// Add classes to li to show dropdown content
 function handleEnter() {
   // Add 'trigger-enter' class to li
   this.classList.add('trigger-enter');
@@ -15,8 +15,9 @@ function handleEnter() {
   setTimeout(() => this.classList.add('trigger-enter-active'), 150); // arrow function -> 'this' is inherited from parent
 }
 
+// Remove classes once you hover away from li
 function handleLeave() {
-  console.log('LEAVEEE');
+  this.classList.remove('trigger-enter', 'trigger-enter-active');
 }
 
 // Listen for mouseenter and leave on each of triggers and fire functions as a response
