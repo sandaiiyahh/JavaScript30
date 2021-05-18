@@ -31,6 +31,13 @@ slider.addEventListener('mouseup', () => {
   slider.classList.remove('active');
 });
 
-slider.addEventListener('mousemove', () => {
+slider.addEventListener('mousemove', (e) => {
   if (!isDown) return; // stops function from running. Won't run if isDown is false
+  e.preventDefault(); // stops any selecting of weird text on page
+  // Get intial position of mousemove, offsetting any potential margins
+  const x = e.pageX - slider.offsetLeft;
+  // console.log({ x, startX }); // x will move, startX stays the same
+
+  // Calculates how far we have moved from initial startX position
+  const walk = x - startX;
 });
