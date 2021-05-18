@@ -35,5 +35,14 @@ The projects are created with vanilla JS with no use of frameworks, libraries, b
 ### 24. [Sticky Nav](https://github.com/sandaiiyahh/JavaScript30/tree/main/24-Sticky%20Nav)
 ### 25. [Event Capture, Propagation, Bubbling and Once](https://github.com/sandaiiyahh/JavaScript30/tree/main/25-Event%20Capture%2C%20Propagation%2C%20Bubbling%20and%20Once)
 ### 26. [Stripe Follow Along Nav](https://github.com/sandaiiyahh/JavaScript30/tree/main/26-Stripe%20Follow%20Along%20Nav)
+### 27. [Click and Drag](https://github.com/sandaiiyahh/JavaScript30/tree/main/27-Click%20and%20Drag)
+
+
+
+
+
+
+
+
 
 
