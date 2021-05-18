@@ -39,5 +39,8 @@ slider.addEventListener('mousemove', (e) => {
   // console.log({ x, startX }); // x will move, startX stays the same
 
   // Calculates how far we have moved from initial startX position
-  const walk = x - startX;
+  const walk = (x - startX) * 3; // Multiply by 3 to get a faster further slider effect
+
+  // Actually move the div now according to how far we clicked down and dragged
+  slider.scrollLeft = scrollLeft - walk;
 });
