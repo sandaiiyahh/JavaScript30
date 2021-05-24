@@ -11,7 +11,7 @@ View demo [here](https://sandaiiyahh.github.io/JavaScript30/28-Video%20Speed%20C
 ## What I Learned
 
 ### 1. pageY
- - Having used pageX for a project before, we used pageY in this project to figure out the position of our mouse relative to the top edge of the document.
+ - Having used pageX in another day's project before, we used pageY now for this project to figure out the position of our mouse relative to the top edge of the document.
  - To offset for any vertical padding or borders of the `.speed-bar`, we then subtracted the position by `offsetTop`. This helps us to accurately get the position starting from the top of the speed bar (0) to the bottom.
  
 ```javascript
