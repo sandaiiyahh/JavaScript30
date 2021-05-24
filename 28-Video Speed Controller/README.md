@@ -20,7 +20,7 @@ View demo [here](https://sandaiiyahh.github.io/JavaScript30/28-Video%20Speed%20C
 
 ```
 
-- To determine how much to fill the speed bar in percentage form, we divided it by the `.speed-bar`'s `offsetHeight` and apply that number to the CSS height style. Then, wherever we move our mose on the bar, the `bar` will stretch to however much it needs to.
+- To determine how much to fill the speed bar in percentage form, we divide this position by the `.speed-bar`'s `offsetHeight` and apply that number to the CSS height style. Then, wherever we move our mose on the bar, the `bar` will stretch to however much it needs to.
 
 ```javascript
 
