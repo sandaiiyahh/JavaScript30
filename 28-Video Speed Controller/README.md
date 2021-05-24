@@ -31,7 +31,7 @@ View demo [here](https://sandaiiyahh.github.io/JavaScript30/28-Video%20Speed%20C
 ```
 
 ### 2. `toFixed()`
- - [`.toFixed()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) rounds a number to a specified number of decimal places. In our case, our playback rate was an extremely long number, so we used `.toFixed(2)` so we can show a much cleaner and shorter number on the actual page.
+ - [`.toFixed()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) rounds a number to a specified number of decimal places. In our case, our playback rate was an extremely long number, so we used `.toFixed(2)` to show a much cleaner and shorter number on the actual page.
  
 ```javascript
 
