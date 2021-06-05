@@ -28,7 +28,7 @@ View demo [here](https://sandaiiyahh.github.io/JavaScript30/29-Countdown%20Timer
 
 ```
 
- - An important thing to note is to make sure to `return` right if you are to clear the interval, otherwise, the timer will still hit -1. 
+ - An important thing to note is if you trying to stop a timer from hitting past 0, make sure to `return` right after you clear the interval. Otherwise, the timer will still hit -1. 
  
  ### 2. Date.now() vs new Date();
   - In our [Day 2 Project](https://github.com/sandaiiyahh/JavaScript30/blob/main/02-JS%20and%20CSS%20Clock/README.md), we used `new Date()` before to extract the minutes, seconds, and hours. This project, we used both `newDate()` and `Date.now()`.
