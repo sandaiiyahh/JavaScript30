@@ -10,7 +10,7 @@ View demo [here](https://sandaiiyahh.github.io/JavaScript30/29-Countdown%20Timer
 
 ## What I Learned
 
-### 1. clearInterval
+### 1. `clearInterval`
  - In conjunction with `setInterval`, [`clearInterval`](https://www.w3schools.com/jsref/met_win_clearinterval.asp) clears the timer set and stops it.
  - In our project, we used this method twice, once to stop the timer from going past 1 second, and another time to prevent two functions from running its intervals at once. 
  
