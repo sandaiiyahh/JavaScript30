@@ -3,6 +3,7 @@ let countdown;
 // Grab selectors
 const timerDisplay = document.querySelector('.display__time-left');
 const endTime = document.querySelector('.display__end-time');
+const buttons = document.querySelectorAll('[data-time]');
 
 // Create timer function
 function timer(seconds) {
@@ -63,3 +64,15 @@ function displayEndTime(timestamp) {
     hour > 12 ? hour - 12 : adjustedHour
   }:${minutes < 10 ? '0' : ''}${minutes} ${hour >= 12 ? 'PM' : 'AM'}`;
 }
+
+// Function that starts the timer for each button clicked
+function startTimer() {
+  // Each button comes with data-time that is a string of the number of minutes
+  const seconds = parseInt(this.dataset.time); // convert to number
+  timer(seconds); // start timer
+}
+
+// For each button, listen for 'startTimer' click
+buttons.forEach((button) => {
+  button.addEventListener('click', startTimer);
+});
