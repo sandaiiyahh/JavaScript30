@@ -37,7 +37,7 @@ The projects are created with vanilla JS with no use of frameworks, libraries, b
 ### 26. [Stripe Follow Along Nav](https://github.com/sandaiiyahh/JavaScript30/tree/main/26-Stripe%20Follow%20Along%20Nav)
 ### 27. [Click and Drag](https://github.com/sandaiiyahh/JavaScript30/tree/main/27-Click%20and%20Drag)
 ### 28. [Video Speed Controller](https://github.com/sandaiiyahh/JavaScript30/tree/main/28-Video%20Speed%20Controller)
-
+### 29. [Countdown Timer](https://github.com/sandaiiyahh/JavaScript30/tree/main/29-Countdown%20Timer)
 
 
 
