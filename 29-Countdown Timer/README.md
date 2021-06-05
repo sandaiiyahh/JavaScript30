@@ -1,6 +1,6 @@
 # ⏲️ Day 29 - Countdown Timer
 
-Just one more day to go! In today's project, I built a countdown timer for the first time! It was cool to be able to build one using plain JavaScript, with functions, intervals, and event listeenrs.
+Just one more day to go! In today's project, I built a countdown timer for the first time! It was cool to be able to build one using plain JavaScript, with functions, intervals, and event listeners.
 
 
 ![countdown-timer-demo](https://i.ibb.co/grw04p6/Screen-Shot-2021-06-05-at-5-40-04-PM.png)
