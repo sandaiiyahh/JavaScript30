@@ -11,7 +11,7 @@ function timer(seconds) {
   // This one will run IMMEDIATELY
   displayTimeLeft(seconds);
 
-  // Display the time left
+  // Display the countdown function counting down
   countdown = setInterval(() => {
     // Every second, figure out how much time is left in seconds
     const secondsLeft = Math.round((then - Date.now()) / 1000);
@@ -28,5 +28,11 @@ function timer(seconds) {
 
 // To account for setInterval not running RIGHT away
 function displayTimeLeft(seconds) {
+  // Convert to minutes
+  const minutes = Math.floor(seconds / 60);
+
+  // Calculate time left
+  const remainderSeconds = seconds % 60;
+
   console.log(seconds);
 }
