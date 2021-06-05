@@ -38,7 +38,7 @@ View demo [here](https://sandaiiyahh.github.io/JavaScript30/02-JS%20and%20CSS%20
    <img src="https://i.ibb.co/djdLjy7/Screen-Shot-2021-04-15-at-12-42-15-PM.png" width="300" />
    
    
-  ### 4. Date.now() Object
+  ### 4. Date Object
    - I have used this [object](https://www.w3schools.com/jsref/jsref_obj_date.asp) before, but not for time. Using the Date object, you can conveniently extract the second, minute, and hour with its object methods.
    
   ```javascript
