@@ -2,6 +2,7 @@ let countdown;
 
 // Grab selectors
 const timerDisplay = document.querySelector('.display__time-left');
+const endTime = document.querySelector('.display__end-time');
 
 // Create timer function
 function timer(seconds) {
@@ -13,6 +14,9 @@ function timer(seconds) {
 
   // This one will run IMMEDIATELY
   displayTimeLeft(seconds);
+
+  // Display end time of when timer ends on page
+  displayEndTime(then);
 
   // Display the countdown function counting down
   countdown = setInterval(() => {
@@ -44,6 +48,18 @@ function displayTimeLeft(seconds) {
   }${remainderSeconds}`;
   timerDisplay.textContent = display;
   document.title = display;
+}
 
-  console.log(seconds);
+// Function that displays end time
+function displayEndTime(timestamp) {
+  // Create new Date object from time stamp
+  const end = new Date(timestamp);
+
+  let hour = end.getHours(); // get hours
+  const minutes = end.getMinutes(); // get minutes
+  let adjustedHour = hour === 0 ? '12' : hour;
+
+  endTime.textContent = `Timer ends at ${
+    hour > 12 ? hour - 12 : adjustedHour
+  }:${minutes < 10 ? '0' : ''}${minutes} ${hour >= 12 ? 'PM' : 'AM'}`;
 }
