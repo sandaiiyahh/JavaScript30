@@ -1,5 +1,8 @@
 let countdown;
 
+// Grab selectors
+const timerDisplay = document.querySelector('.display__time-left');
+
 // Create timer function
 function timer(seconds) {
   // Figure out when the timer started
@@ -19,6 +22,7 @@ function timer(seconds) {
     // Check if we should stop it (prevent from going negative)
     if (secondsLeft < 0) {
       clearInterval(countdown);
+      return;
     }
 
     // This one will run after a second
@@ -33,6 +37,12 @@ function displayTimeLeft(seconds) {
 
   // Calculate time left
   const remainderSeconds = seconds % 60;
+
+  // Display time remaining on page
+  const display = `${minutes}:${
+    remainderSeconds < 10 ? '0' : ''
+  }${remainderSeconds}`;
+  timerDisplay.textContent = display;
 
   console.log(seconds);
 }
