@@ -75,7 +75,7 @@ View demo [here](https://sandaiiyahh.github.io/JavaScript30/29-Countdown%20Timer
   
    document.customForm.addEventListener('submit', function (e) {
     e.preventDefault();
-      const mins = this.minutes.value;
+    const mins = this.minutes.value;
   });
 
    ```
