@@ -7,6 +7,9 @@ const buttons = document.querySelectorAll('[data-time]');
 
 // Create timer function
 function timer(seconds) {
+  // Clear any existing timers
+  clearInterval(countdown);
+
   // Figure out when the timer started
   const now = Date.now();
   // Then is the time the timer will stop
