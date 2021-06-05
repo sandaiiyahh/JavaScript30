@@ -43,6 +43,7 @@ function displayTimeLeft(seconds) {
     remainderSeconds < 10 ? '0' : ''
   }${remainderSeconds}`;
   timerDisplay.textContent = display;
+  document.title = display;
 
   console.log(seconds);
 }
