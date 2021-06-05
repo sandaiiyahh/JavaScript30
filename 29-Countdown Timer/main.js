@@ -79,3 +79,14 @@ function startTimer() {
 buttons.forEach((button) => {
   button.addEventListener('click', startTimer);
 });
+
+// If there's a name attribute added in, you don't need to query select the element
+document.customForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+  // Grab minutes from input
+  const mins = this.minutes.value;
+  this.reset(); // clear out input
+
+  // Take minutes and pass to timer (make sure to convert it to seconds first!)
+  timer(mins * 60);
+});
