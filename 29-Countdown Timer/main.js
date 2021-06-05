@@ -8,6 +8,9 @@ function timer(seconds) {
   // now is in milliseconds, so multiply by 1000 to get in milliseconds
   const then = now + seconds * 1000;
 
+  // This one will run IMMEDIATELY
+  displayTimeLeft(seconds);
+
   // Display the time left
   countdown = setInterval(() => {
     // Every second, figure out how much time is left in seconds
@@ -18,6 +21,12 @@ function timer(seconds) {
       clearInterval(countdown);
     }
 
-    console.log(secondsLeft);
+    // This one will run after a second
+    displayTimeLeft(secondsLeft);
   });
+}
+
+// To account for setInterval not running RIGHT away
+function displayTimeLeft(seconds) {
+  console.log(seconds);
 }
