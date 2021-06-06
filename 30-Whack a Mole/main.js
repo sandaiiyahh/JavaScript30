@@ -66,7 +66,7 @@ function bonk(e) {
 
   // Increase score when someone clicks on something
   score++;
-  this.classList.remove('up');
+  this.parentNode.classList.remove('up'); // remove 'up' class from hole
   scoreBoard.textContent = score;
 }
 
