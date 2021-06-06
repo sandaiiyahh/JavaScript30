@@ -4,6 +4,7 @@ const moles = document.querySelectorAll('.mole');
 
 let lastHole;
 let timeUp = false; // determine when to stop moles from peeping
+let score = 0;
 
 // Function that gives us random amount of milliseconds
 function randomTime(min, max) {
@@ -47,11 +48,27 @@ function peep() {
 // Function that starts game
 function startGame() {
   scoreBoard.textContent = 0;
+  // Reset timeUp to be false again and score back to 0
   timeUp = false;
-  peep();
+  score = 0;
+  peep(); // run moles peeping again
 
-  // After 10 seconds, set timeUp to true
+  // After 10 seconds, set timeUp to true (game's over!)
   setTimeout(() => {
     timeUp = true;
   }, 10000);
 }
+
+// Function that tracks how many moles you hit
+function bonk(e) {
+  // Edge case for when someone tries to fake a click
+  if (!e.isTrusted) return;
+
+  // Increase score when someone clicks on something
+  score++;
+  this.classList.remove('up');
+  scoreBoard.textContent = score;
+}
+
+// Listen for 'click' event on each of the moles
+moles.forEach((mole) => mole.addEventListener('click', bonk));
