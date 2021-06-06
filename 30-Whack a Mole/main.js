@@ -43,3 +43,15 @@ function peep() {
     if (!timeUp) peep();
   }, time);
 }
+
+// Function that starts game
+function startGame() {
+  scoreBoard.textContent = 0;
+  timeUp = false;
+  peep();
+
+  // After 10 seconds, set timeUp to true
+  setTimeout(() => {
+    timeUp = true;
+  }, 10000);
+}
