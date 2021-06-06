@@ -1,6 +1,7 @@
 const holes = document.querySelectorAll('.hole');
 const scoreBoard = document.querySelector('.score');
 const moles = document.querySelectorAll('.mole');
+const button = document.querySelector('button');
 
 let lastHole;
 let timeUp = false; // determine when to stop moles from peeping
@@ -56,6 +57,7 @@ function startGame() {
   // After 10 seconds, set timeUp to true (game's over!)
   setTimeout(() => {
     timeUp = true;
+    button.textContent = 'Game Over, start again!';
   }, 10000);
 }
 
