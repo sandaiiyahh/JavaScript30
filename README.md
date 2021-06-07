@@ -6,7 +6,7 @@ After bootcamp, I aim to continue practicing my JavaScript skills so I decided t
 The projects are created with vanilla JS with no use of frameworks, libraries, boilerplates, or compilers. 
 
 ### **Start Date**: 4/14/2021
-### **End Date**: TBD
+### **End Date**:  6/6/2021
 
 # Projects
 ### 1. [JavaScript Drum Kit](https://github.com/sandaiiyahh/JavaScript30/tree/main/01-JavaScript%20Drum%20Kit)
@@ -38,6 +38,6 @@ The projects are created with vanilla JS with no use of frameworks, libraries, b
 ### 27. [Click and Drag](https://github.com/sandaiiyahh/JavaScript30/tree/main/27-Click%20and%20Drag)
 ### 28. [Video Speed Controller](https://github.com/sandaiiyahh/JavaScript30/tree/main/28-Video%20Speed%20Controller)
 ### 29. [Countdown Timer](https://github.com/sandaiiyahh/JavaScript30/tree/main/29-Countdown%20Timer)
-
+### 30. [Whack a Mole](https://github.com/sandaiiyahh/JavaScript30/tree/main/30-Whack%20a%20Mole)
 
 
